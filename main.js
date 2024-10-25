@@ -20,4 +20,5 @@ function generateDirections() {
     directions += `${destination}に着きますねん！`;
 
     document.getElementById('directions').textContent = directions;
+    document.getElementById('directions').innerHTML = directions.replace(/\n/g, "<br>");
 }
